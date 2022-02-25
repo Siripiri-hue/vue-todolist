@@ -33,13 +33,18 @@ const toDoList = new Vue ({
 
         addLine: function(newText) 
         {
-            const newObj = {
-                text : newText,
-                done: false,
+            if(newText !== "")
+            {
+                const newObj = {
+                    text : newText,
+                    done: false,
+                }
+                
+                this.thingsToDo.push(newObj);
+                this.newLine = "";
             }
-            
-            this.thingsToDo.push(newObj);
-            this.newLine = "";
+            else 
+                alert("Hai inserito una voce vuota!");
         },
     },
 })
