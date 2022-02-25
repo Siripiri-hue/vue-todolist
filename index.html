@@ -15,7 +15,7 @@
     
     <section id="todo-list">
         <ul>
-            <li v-for="(toDo, index) in thingsToDo" class="todo">
+            <li v-for="(toDo, index) in thingsToDo" class="todo" :class="[(toDo.done) ? 'isDone' : '']">
                 {{ toDo.text }}
                 <div class="icon">
                     <i class="fa-solid fa-check check-icon"></i>

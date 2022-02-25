@@ -2,10 +2,11 @@ const toDoList = new Vue ({
     el: "#todo-list",
     data: {
         // todo: true,
+        //isDone: true,
         thingsToDo: [
             {
                 text: "Prenotare vacanza",
-                done: false,
+                done: true,
             },
             {
                 text: "Shopping",

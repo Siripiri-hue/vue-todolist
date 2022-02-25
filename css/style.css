@@ -40,3 +40,7 @@ h1 {
 .icon .delete-icon {
     padding-left: 10px;
 }
+
+.isDone {
+    text-decoration: line-through;
+}
