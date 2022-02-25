@@ -12,7 +12,7 @@ const toDoList = new Vue ({
                 done: false,
             },
             {
-                text: "Prenotazione ristorante",
+                text: "Prenotare ristorante",
                 done: false,
             },
             {

@@ -1,21 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #8AB0AB;
 }
 
 ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    color: #1A1D1A;
+    margin: 20px 0 0 20px;
 }
 
 #todo-list {
     margin: 50px auto;
-    max-width: 300px;
-    border: 1px solid rgb(2, 177, 2);
-
+    max-width: 500px;
+    border: 1px solid #3E505B;
+    border-radius: 20px;
+    padding: 25px;
 }
 
 .todo {
     padding: 20px;
-    border: 1px solid rgb(65, 226, 137);
+    border: 1px solid #26413C;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #03120E;
+}
+
+.icon .delete-icon {
+    padding-left: 10px;
 }
