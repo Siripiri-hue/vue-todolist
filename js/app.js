@@ -50,9 +50,9 @@ const toDoList = new Vue ({
 
         strikeLine: function(bool, i) 
         {
-            console.log(bool, i);
+            // console.log(bool, i);
             this.thingsToDo[i].done = !bool;
-            console.log(this.thingsToDo[i].done);
+            // console.log(this.thingsToDo[i].done);
         },
     },
 })

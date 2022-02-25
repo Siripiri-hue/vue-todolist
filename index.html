@@ -32,7 +32,7 @@
                 </span>
                 
                 <div class="icon">
-                    <i class="fa-solid fa-check check-icon"></i>
+                    <i class="fa-solid fa-check check-icon" v-on:click="strikeLine(item.done, index)"></i>
                     <i class="fa-solid fa-trash-can delete-icon" v-on:click="deleteLine(index)"></i>
                 </div> 
             </li>
