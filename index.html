@@ -26,9 +26,9 @@
         
 
         <ul id="todo-list">
-            <li v-for="(toDo, index) in thingsToDo" class="todo" :class="[(toDo.done) ? 'isDone' : '']">
-                <span class="text">
-                    {{ toDo.text }}
+            <li v-for="(item, index) in thingsToDo" class="todo" :class="[(item.done) ? 'isDone' : '']">
+                <span class="text" v-on:click="strikeLine(item.done, index)">
+                    {{ item.text }}
                 </span>
                 
                 <div class="icon">

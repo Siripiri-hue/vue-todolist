@@ -28,6 +28,7 @@ const toDoList = new Vue ({
     methods: {
         deleteLine: function(index) 
         {
+            // console.log(index);
             this.thingsToDo.splice(index,1);
         },
 
@@ -45,6 +46,13 @@ const toDoList = new Vue ({
             }
             else 
                 alert("Hai inserito una voce vuota!");
+        },
+
+        strikeLine: function(bool, i) 
+        {
+            console.log(bool, i);
+            this.thingsToDo[i].done = !bool;
+            console.log(this.thingsToDo[i].done);
         },
     },
 })
