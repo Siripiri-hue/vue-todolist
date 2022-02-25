@@ -1,8 +1,10 @@
 const toDoList = new Vue ({
-    el: "#todo-list",
+    el: "#vue-toDoList",
     data: {
         // todo: true,
         //isDone: true,
+        newLine: "",
+
         thingsToDo: [
             {
                 text: "Prenotare vacanza",
@@ -22,9 +24,22 @@ const toDoList = new Vue ({
             },
         ]
     },
+
     methods: {
-        deleteLine: function(index){
+        deleteLine: function(index) 
+        {
             this.thingsToDo.splice(index,1);
-        }
-    }
+        },
+
+        addLine: function(newText) 
+        {
+            const newObj = {
+                text : newText,
+                done: false,
+            }
+            
+            this.thingsToDo.push(newObj);
+            this.newLine = "";
+        },
+    },
 })
