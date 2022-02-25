@@ -18,8 +18,11 @@ const toDoList = new Vue ({
             },
             {
                 text: "Prenotare SPA",
-                done: false,
+                done: true,
             },
         ]
+    },
+    methods: {
+
     }
 })
