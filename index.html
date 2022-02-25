@@ -19,7 +19,7 @@
             <h1 id="title">Vue ToDoList</h1>
 
             <div action="addItem">
-                <input type="text" name="addItem" id="addItem" v-model="newLine" placeholder="Add something to the toDolist!">
+                <input type="text" name="addItem" id="addItem" v-model="newLine" placeholder="Add something to the toDolist!" v-on:keyup.enter="addLine(newLine)">
                 <button id="submit" v-on:click="addLine(newLine)">Submit</button>
             </div>
         </nav>
