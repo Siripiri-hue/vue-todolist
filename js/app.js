@@ -23,6 +23,8 @@ const toDoList = new Vue ({
         ]
     },
     methods: {
-
+        deleteLine: function(index){
+            this.thingsToDo.splice(index,1);
+        }
     }
 })

@@ -37,10 +37,14 @@ h1 {
     color: #03120E;
 }
 
-.icon .delete-icon {
+.icon {
+    cursor: pointer;
+}
+
+.delete-icon {
     padding-left: 10px;
 }
 
-.isDone {
+.isDone > span {
     text-decoration: line-through;
 }
